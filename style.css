@@ -1,0 +1,48 @@
+
+.footer {
+	display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.icon {
+    width: 10pt ;
+    height: auto;
+}
+
+.background {
+    background-color: #4A315E;
+
+}
+
+.text {
+    color: #ffffff;
+}
+
+.img_set {
+    margin-top: 2%;
+    max-width: 100%;
+    max-height: 100%;
+    width :auto;
+    height: auto;
+}
+
+.margin {
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+
+a:link {
+    color : white;
+  }
+  a:visited {
+    color : white;
+  }
+  a:hover {
+    color : gray;
+  }
+  a:active {
+    color : gray
+  }
