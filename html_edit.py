@@ -18,7 +18,7 @@ for j in range(22):
     with open(f'index_page{j+1}.html','w',encoding='UTF-8') as f :
         cmt = ''.join(htmls[:22])
         f.write(cmt)
-        x = 1
+        x = j+1
         for i in range(1,22):
             if i == x :
                 f.write(f'\t\t<button type=\"button\" class=\"btn btn-primary\" onclick=\"location.href=\'index_page{i}.html\'\"disabled >{i}</button>\n')
@@ -37,15 +37,10 @@ for j in range(22):
             meta_data = img._getexif()
             list = meta_data[36867].split(' ')
             list2 = list[0].split(':')
-            
-            f.write(f'\t\t<h3>{list2[0]} {list2[1]} {list2[2]}</h3>\n')
-            
-            
-            
-            
-            
-            
+
             f.write(f'\t\t<img src=\"images/{j*15+i}_1.webp\" class=\"img_set\">\n')
+            f.write(f'\t\t<h6>{list2[0]} {list2[1]} {list2[2]}</h6>\n')
+            
         cmt = ''.join(htmls[62:70])
         f.write(cmt)
         for i in range(1,22):
