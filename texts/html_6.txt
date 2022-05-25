@@ -1,20 +1,15 @@
-<img src="images/101_1.jpg" class="img_set">
-<img src="images/102_1.jpg" class="img_set">
-<img src="images/103_1.jpg" class="img_set">
-<img src="images/104_1.jpg" class="img_set">
-<img src="images/105_1.jpg" class="img_set">
-<img src="images/106_1.jpg" class="img_set">
-<img src="images/107_1.jpg" class="img_set">
-<img src="images/108_1.jpg" class="img_set">
-<img src="images/109_1.jpg" class="img_set">
-<img src="images/110_1.jpg" class="img_set">
-<img src="images/111_1.jpg" class="img_set">
-<img src="images/112_1.jpg" class="img_set">
-<img src="images/113_1.jpg" class="img_set">
-<img src="images/114_1.jpg" class="img_set">
-<img src="images/115_1.jpg" class="img_set">
-<img src="images/116_1.jpg" class="img_set">
-<img src="images/117_1.jpg" class="img_set">
-<img src="images/118_1.jpg" class="img_set">
-<img src="images/119_1.jpg" class="img_set">
-<img src="images/120_1.jpg" class="img_set">
+			<img src="images/76_1.webp" class="img_set">
+			<img src="images/77_1.webp" class="img_set">
+			<img src="images/78_1.webp" class="img_set">
+			<img src="images/79_1.webp" class="img_set">
+			<img src="images/80_1.webp" class="img_set">
+			<img src="images/81_1.webp" class="img_set">
+			<img src="images/82_1.webp" class="img_set">
+			<img src="images/83_1.webp" class="img_set">
+			<img src="images/84_1.webp" class="img_set">
+			<img src="images/85_1.webp" class="img_set">
+			<img src="images/86_1.webp" class="img_set">
+			<img src="images/87_1.webp" class="img_set">
+			<img src="images/88_1.webp" class="img_set">
+			<img src="images/89_1.webp" class="img_set">
+			<img src="images/90_1.webp" class="img_set">

@@ -1,20 +1,15 @@
-<img src="images/21_1.jpg" class="img_set">
-<img src="images/22_1.jpg" class="img_set">
-<img src="images/23_1.jpg" class="img_set">
-<img src="images/24_1.jpg" class="img_set">
-<img src="images/25_1.jpg" class="img_set">
-<img src="images/26_1.jpg" class="img_set">
-<img src="images/27_1.jpg" class="img_set">
-<img src="images/28_1.jpg" class="img_set">
-<img src="images/29_1.jpg" class="img_set">
-<img src="images/30_1.jpg" class="img_set">
-<img src="images/31_1.jpg" class="img_set">
-<img src="images/32_1.jpg" class="img_set">
-<img src="images/33_1.jpg" class="img_set">
-<img src="images/34_1.jpg" class="img_set">
-<img src="images/35_1.jpg" class="img_set">
-<img src="images/36_1.jpg" class="img_set">
-<img src="images/37_1.jpg" class="img_set">
-<img src="images/38_1.jpg" class="img_set">
-<img src="images/39_1.jpg" class="img_set">
-<img src="images/40_1.jpg" class="img_set">
+			<img src="images/16_1.webp" class="img_set">
+			<img src="images/17_1.webp" class="img_set">
+			<img src="images/18_1.webp" class="img_set">
+			<img src="images/19_1.webp" class="img_set">
+			<img src="images/20_1.webp" class="img_set">
+			<img src="images/21_1.webp" class="img_set">
+			<img src="images/22_1.webp" class="img_set">
+			<img src="images/23_1.webp" class="img_set">
+			<img src="images/24_1.webp" class="img_set">
+			<img src="images/25_1.webp" class="img_set">
+			<img src="images/26_1.webp" class="img_set">
+			<img src="images/27_1.webp" class="img_set">
+			<img src="images/28_1.webp" class="img_set">
+			<img src="images/29_1.webp" class="img_set">
+			<img src="images/30_1.webp" class="img_set">
