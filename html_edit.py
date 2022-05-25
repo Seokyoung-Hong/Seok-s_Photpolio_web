@@ -31,7 +31,7 @@ for j in range(22):
         
         for i in range(1,16) :
             
-            imgfile = "D:/imgs/origin/1_1.jpg"
+            imgfile = f"D:/imgs/origin/{i+1}_1.jpg"
             img = Image.open(imgfile)
 
             meta_data = img._getexif()
