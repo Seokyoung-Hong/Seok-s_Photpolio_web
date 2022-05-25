@@ -1,4 +1,7 @@
-
+import os
+import datetime
+from PIL import Image
+from importlib_metadata import metadata
 
 
 
@@ -27,6 +30,21 @@ for j in range(22):
         f.write(cmt)
         
         for i in range(1,16) :
+            
+            imgfile = "D:/imgs/origin/1_1.jpg"
+            img = Image.open(imgfile)
+
+            meta_data = img._getexif()
+            list = meta_data[36867].split(' ')
+            list2 = list[0].split(':')
+            
+            f.write(f'\t\t<h3>{list2[0]} {list2[1]} {list2[2]}</h3>\n')
+            
+            
+            
+            
+            
+            
             f.write(f'\t\t<img src=\"images/{j*15+i}_1.webp\" class=\"img_set\">\n')
         cmt = ''.join(htmls[62:70])
         f.write(cmt)
