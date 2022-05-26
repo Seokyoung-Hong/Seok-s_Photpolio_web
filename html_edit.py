@@ -31,11 +31,17 @@ for j in range(22):
         
         for i in range(1,16) :
             
-            imgfile = f"D:/imgs/origin/{i+1}_1.jpg"
+            imgfile = f"D:/imgs/origin/{j*15+i}_1.jpg"
             img = Image.open(imgfile)
 
             meta_data = img._getexif()
-            list = meta_data[36867].split(' ')
+            try :
+                list = meta_data[36867].split(' ')
+            except :
+                try :
+                    list = meta_data[306].split(' ')
+                except :
+                    print(j*15+i)
             list2 = list[0].split(':')
 
             f.write(f'\t\t<img src=\"images/{j*15+i}_1.webp\" class=\"img_set\">\n')
