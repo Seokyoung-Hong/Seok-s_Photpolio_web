@@ -53,7 +53,7 @@ def html_copy(f,h,a,b) :
 
 
 
-with open('index_page.html','r',encoding='UTF-8') as f :
+with open('index_copy.html','r',encoding='UTF-8') as f :
     htmls = f.readlines()
     # print(htmls)
 
@@ -61,30 +61,18 @@ with open('index_page.html','r',encoding='UTF-8') as f :
 
 # print(''.join(htmls[42:44]))
 
-for j in range(22):
-    with open(f'index_page{j+1}.html','w',encoding='UTF-8') as f :
-        
-        html_copy(f,htmls,1,20)
-        buttons(f,j,21)
-        
-        f.write('\t\t<p>\n')
-        
-        for i in range(1,16) :
-            
-            imgfile = f"D:/imgs/origin/{i+1}_1.jpg"
-            img = Image.open(imgfile)
 
-            meta_data = img._getexif()
-            list = meta_data[36867].split(' ')
-            list2 = list[0].split(':')
-            
-            f.write(f'\t\t\t\t<img src=\"images/{j*15+i}_1.webp\" class=\"img_set\">\n')
-            f.write(f'\t\t\t\t<h6>\n\t\t\t\t\t{list2[0]} {list2[1]} {list2[2]}\n')
-            f.write(f'\t\t\t\t\t<a href="images/{j*15+i}_1.webp" target="_blank">open image bigger</a>\n')
-            f.write('\t\t\t\t</h6>\n')
-            
-        html_copy(f,htmls,68,71)
-        
-        buttons(f,j,21)
-        
-        html_copy(f,htmls,102,109)
+with open(f'index.html','w',encoding='UTF-8') as f :
+    
+    html_copy(f,htmls,1,36)
+    # buttons(f,j,21)
+    
+    for i in range(1,317):
+        if i == 1:
+            f.write('\t\t\t\t\t<div class="carousel-item active">\n')
+        else :
+            f.write('\t\t\t\t\t<div class="carousel-item">\n')
+        f.write(f'\t\t\t\t\t<img src="images/{i}_1.webp" class="d-block w-100" alt="{i}_1.webp">\n')
+        f.write('\t\t\t\t\t</div>\n')
+    
+    html_copy(f,htmls,47,71)
