@@ -68,6 +68,8 @@ with open(f'index.html','w',encoding='UTF-8') as f :
     # buttons(f,j,21)
     
     for i in range(1,317):
+        if i in [32,38,68,74,75,85,129,130,135,160,195,196,230,262,263,265,268,274,275,276,279,284,298,290,292,293,296,303,306,307,311,312,313,316] :
+            continue
         if i == 1:
             f.write('\t\t\t\t\t<div class="carousel-item active">\n')
         else :
