@@ -73,7 +73,7 @@ for j in range(22):
             
             imgfile = f"D:/imgs/origin/{i+1}_1.jpg"
             img = Image.open(imgfile)
-
+            
             meta_data = img._getexif()
             list = meta_data[36867].split(' ')
             list2 = list[0].split(':')

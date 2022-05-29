@@ -9,9 +9,9 @@ def buttons(f,j,button_count):
     f.write('            <div class="btn-group me-3" aria-label="Previous">\n')
     # f.write('testsss')
     if j == 0 :
-        f.write(f'\t\t\t\t<button type="button" class="btn btn-primary" onclick="location.href=\'index_page{j+1}.html\'" disabled >Previous</button>\n')
+        f.write(f'\t\t\t\t<button type="button" class="btn btn-primary" onclick="location.href=\'pages/index_page{j+1}.html\'" disabled >Previous</button>\n')
     else :
-        f.write(f'\t\t\t\t<button type="button" class="btn btn-primary" onclick="location.href=\'index_page{j}.html\'" >Previous</button>\n')
+        f.write(f'\t\t\t\t<button type="button" class="btn btn-primary" onclick="location.href=\'pages/index_page{j}.html\'" >Previous</button>\n')
     f.write('            </div>\n')
     f.write('            <div class="btn-group me-3" aria-label="First group"\n>')
     
@@ -31,16 +31,16 @@ def buttons(f,j,button_count):
         # print('elif')
     for i in range(button_start,button_end+1):
         if i == j+1 :
-            f.write(f'\t\t\t\t<button type=\"button\" class=\"btn btn-primary\" onclick=\"location.href=\'index_page{i}.html\'\"disabled >{i}</button>\n')
+            f.write(f'\t\t\t\t<button type=\"button\" class=\"btn btn-primary\" onclick=\"location.href=\'pages/index_page{i}.html\'\"disabled >{i}</button>\n')
         
         else :
-            f.write(f'\t\t\t\t<button type=\"button\" class=\"btn btn-primary\" onclick=\"location.href=\'index_page{i}.html\'\">{i}</button>\n')
+            f.write(f'\t\t\t\t<button type=\"button\" class=\"btn btn-primary\" onclick=\"location.href=\'pages/index_page{i}.html\'\">{i}</button>\n')
     f.write('        </div>\n')
     f.write('            <div class="btn-group me-3" aria-label="next">\n')
     if j+1 == button_end :
-        f.write(f'\t\t\t\t<button type="button" class="btn btn-primary" onclick="location.href=\'index_page{j+1}.html\'" disabled >Next</button>\n')
+        f.write(f'\t\t\t\t<button type="button" class="btn btn-primary" onclick="location.href=\'pages/index_page{j+1}.html\'" disabled >Next</button>\n')
     else :
-        f.write(f'\t\t\t\t<button type="button" class="btn btn-primary" onclick="location.href=\'index_page{j+2}.html\'" >Next</button>\n')
+        f.write(f'\t\t\t\t<button type="button" class="btn btn-primary" onclick="location.href=\'pages/index_page{j+2}.html\'" >Next</button>\n')
 
     f.write('            </div>\n')
     f.write('        </div>\n')
@@ -62,7 +62,7 @@ with open('index_page.html','r',encoding='UTF-8') as f :
 # print(''.join(htmls[42:44]))
 
 for j in range(22):
-    with open(f'index_page{j+1}.html','w',encoding='UTF-8') as f :
+    with open(f'pages/index_page{j+1}.html','w',encoding='UTF-8') as f :
         
         html_copy(f,htmls,1,20)
         buttons(f,j,21)
