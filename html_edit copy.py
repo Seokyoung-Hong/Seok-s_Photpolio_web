@@ -2,7 +2,7 @@ import os
 import datetime
 from PIL import Image
 from importlib_metadata import metadata
-
+import pandas as pd
 
 def buttons(f,j,button_count):
     f.write('        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">\n')
@@ -61,30 +61,41 @@ with open('index_page.html','r',encoding='UTF-8') as f :
 
 # print(''.join(htmls[42:44]))
 
-for j in range(22):
-    with open(f'index_page{j+1}.html','w',encoding='UTF-8') as f :
+j=1
+with open(f'index_pagesss.html','w',encoding='UTF-8') as f :
+    df = pd.read_excel('img_data.xlsx')
+    table = df.to_dict()
+    print(table)
+    
+    html_copy(f,htmls,1,20)
+    buttons(f,j,21)
+    
+    f.write('\t\t<p>\n')
+    
+    for i in range(1,16) :
+        placetext = ''
+        if 'nan' != str(table['country'][i-1]) :
+            placetext = '\n{}'.format(table['country'][i-1])
+            if 'nan' not in str(table['place'][i-1]) :
+                placetext = placetext+', {}\n'.format(table['place'][i-1])
+            else :
+                placetext = placetext + '\n'
         
-        html_copy(f,htmls,1,20)
-        buttons(f,j,21)
+        imgfile = f"D:/imgs/origin/{i+1}_1.jpg"
+        img = Image.open(imgfile)
+
+        meta_data = img._getexif()
+        list = meta_data[36867].split(' ')
+        list2 = list[0].split(':')
         
-        f.write('\t\t<p>\n')
+        f.write(f'\t\t\t\t<img src=\"../images/{j*15+i}_1.webp\" class=\"img_set\">\n')
+        f.write(f'\t\t\t\t<h6>\n\t\t\t\t\t<span style=\"text-align>{list2[0]} {list2[1]} {list2[2]}\n')
+        f.write(f'\t\t\t\t\t{placetext}\n')
+        f.write(f'\t\t\t\t\t<a href="../images/{j*15+i}_1.webp" target="_blank">open image bigger</a>\n')
+        f.write('\t\t\t\t</h6>\n')
         
-        for i in range(1,16) :
-            
-            imgfile = f"D:/imgs/origin/{i+1}_1.jpg"
-            img = Image.open(imgfile)
-            
-            meta_data = img._getexif()
-            list = meta_data[36867].split(' ')
-            list2 = list[0].split(':')
-            
-            f.write(f'\t\t\t\t<img src=\"images/{j*15+i}_1.webp\" class=\"img_set\">\n')
-            f.write(f'\t\t\t\t<h6>\n\t\t\t\t\t{list2[0]} {list2[1]} {list2[2]}\n')
-            f.write(f'\t\t\t\t\t<a href="images/{j*15+i}_1.webp" target="_blank">open image bigger</a>\n')
-            f.write('\t\t\t\t</h6>\n')
-            
-        html_copy(f,htmls,68,71)
-        
-        buttons(f,j,21)
-        
-        html_copy(f,htmls,102,109)
+    html_copy(f,htmls,68,71)
+    
+    buttons(f,j,21)
+    
+    html_copy(f,htmls,102,109)
