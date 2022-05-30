@@ -78,3 +78,5 @@ with open(f'index.html','w',encoding='UTF-8') as f :
         f.write('\t\t\t\t\t</div>\n')
     
     html_copy(f,htmls,47,71)
+
+print('HTML pages copied well')

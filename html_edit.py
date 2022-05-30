@@ -105,3 +105,5 @@ for j in range(21):
         buttons(f,j,21)
         
         html_copy(f,htmls,102,109)
+
+print('HTML pages made well')
