@@ -18,19 +18,44 @@
     </head>
     <body class = "background text margin" >
         <p>
-            <h1>
+            <h1 id = "title">
                 <a href="index.html" style="text-decoration: none;" target="_self" title="Go to Homepage">Seok's Photpolio</a>
             </h1>
         </p>
-        
+        <nav class="navbar navbar-expand-lg", style="background-color: #6A4687;">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">Home</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="pages/index_page1.html">All images</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="country_choice.html">Choose Country</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="tag_choice.html">Choose Tag</a>
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link disabled">Disabled</a>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</nav>
         <p>
-            <h3>
+            <h3 class="align_center">
                 This is amateur's photo gallery please enjoy!
             </h3>
             <button type="button" class="btn btn-primary" onclick="location.href='pages/index_page1.html'">Go to gallery!</button><br>
             <!-- <p class = "footer text"><a href="https://www.instagram.com/sjrdung03/" title="인스타그램 계정 바로가기" target="_blank">@sjrdung03</a></p> -->
-            <img src="Instagram_Glyph_White.png" alt="인스타그램 로고" class="icon" align = "bottom">
-            <p class = "footer text"><a href="https://www.instagram.com/sjrdung03/" title="Go to Instagram" target="_blank">@sjrdung03</a></p>
+            <img src="Instagram_Glyph_White.png" alt="인스타그램 로고" class="icon" style = " align-items : bottom;">
+            <p class = "footer text">
+				<a href="https://www.instagram.com/sjrdung03/" title="Go to Instagram" target="_blank">@sjrdung03</a>
+			</p>
 
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">

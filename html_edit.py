@@ -51,7 +51,39 @@ def html_copy(f,h,a,b) :
     cmt = ''.join(h[a-1:b])
     f.write(cmt)
 
+def insert_img(f,i,table) :
+    
+    country_name = ''
+    placetext = ''
+    if 'nan' != str(table['country'][i-1]) :
+        country_name = '{}'.format(table['country'][i-1])
+        # placetext = '{}'.format(table['country'][i-1])
+        if 'nan' != str(table['place'][i-1]) :
+            placetext = '{}'.format(table['place'][i-1])
+            
+            if 'nan' != str(table['place2'][i-1]) :
+                placetext = placetext+', {}\n'.format(table['place2'][i-1])
+            else :
+                placetext = placetext + '\n'
+        else :
+            placetext = placetext + '\n'
+    
+    # imgfile = f"D:/imgs/origin/{i}_1.jpg"
+    # img = Image.open(imgfile)
 
+    # meta_data = img._getexif()
+    # list = meta_data[36867].split(' ')
+    # list2 = list[0].split(':')
+    
+    f.write(f'\t\t\t<a href="../images/{i}_1.webp" target="_blank">\n')
+    f.write(f'\t\t\t\t<img src=\"../images/{i}_1.webp\" class=\"img_set\">\n')
+    f.write(f'\t\t\t</a>\n')
+    f.write(f'\t\t\t<h4>\n')
+    # f.write(f'\t\t\t\t\t{list2[0]} {list2[1]} {list2[2]}\n')
+    if country_name != '' :
+        f.write(f'\t\t\t\t<a href="country/{country_name}.html" style="text-decoration: none;" title="{country_name}" target="_self"> {country_name} </a>\n')
+    f.write(f'\t\t\t\t{placetext}\n')
+    f.write('\t\t\t</h4>\n')
 
 with open('index_page.html','r',encoding='UTF-8') as f :
     htmls = f.readlines()
@@ -67,43 +99,18 @@ for j in range(21):
         table = df.to_dict()
         # print(table)
         
-        html_copy(f,htmls,1,20)
+        html_copy(f,htmls,1,44)
         buttons(f,j,21)
         
         f.write('\t\t<p>\n')
         
-        for i in range(1,16) :
-            placetext = ''
-            if 'nan' != str(table['country'][j*15+i-1]) :
-                placetext = '{}'.format(table['country'][j*15+i-1])
-                if 'nan' != str(table['place'][j*15+i-1]) :
-                    placetext = placetext+', {}'.format(table['place'][j*15+i-1])
-                    if 'nan' != str(table['place2'][j*15+i-1]) :
-                        placetext = placetext+', {}\n'.format(table['place2'][j*15+i-1])
-                    else :
-                        placetext = placetext + '\n'
-                else :
-                    placetext = placetext + '\n'
-            
-            imgfile = f"D:/imgs/origin/{i+1}_1.jpg"
-            img = Image.open(imgfile)
+        for i in range(j*15+1,j*15+16) :
+            insert_img(f,i,table)
 
-            meta_data = img._getexif()
-            list = meta_data[36867].split(' ')
-            list2 = list[0].split(':')
-            
-            f.write(f'\t\t\t<a href="../images/{j*15+i}_1.webp" target="_blank">\n')
-            f.write(f'\t\t\t\t<img src=\"../images/{j*15+i}_1.webp\" class=\"img_set\">\n')
-            f.write(f'\t\t\t</a>\n')
-            f.write(f'\t\t\t<h4>\n')
-            # f.write(f'\t\t\t\t\t{list2[0]} {list2[1]} {list2[2]}\n')
-            f.write(f'\t\t\t\t{placetext}')
-            f.write('\t\t\t</h4>\n')
-            
-        html_copy(f,htmls,68,71)
+        html_copy(f,htmls,92,99)
         
         buttons(f,j,21)
         
-        html_copy(f,htmls,102,109)
+        html_copy(f,htmls,121,134)
 
 print('HTML pages made well')
