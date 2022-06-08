@@ -84,6 +84,19 @@ def insert_img(f,i,table) :
     if country_name != '' :
         f.write(f'\t\t\t\t<a href="../country/{country_name}.html" style="text-decoration: none;" title="{country_name}" target="_self"> {country_name} </a>\n')
     f.write(f'\t\t\t\t{placetext}\n')
+    count = False
+    for tag in tag_list :
+        if str(i) in tag_list[tag] :
+            count = True
+    if count :
+        f.write(f'\t\t\t\t<details class = "tag_summary">\n')
+        f.write(f'\t\t\t\t<summary>Tags</summary>\n')
+        f.write(f'\t\t\t\t<p>\n')
+        for tag in tag_list :
+            if str(i) in tag_list[tag] :
+                f.write('\t\t\t\t<a class = "tag" href="{}.html" style ="text-decoration: none;" target="_self"> {} </a>\n'.format(tag,tag))
+        
+        f.write(f'\t\t\t\t</details>\n')
     f.write('\t\t\t</h4>\n')
 
 with open('index_tag.html','r',encoding='UTF-8') as f :

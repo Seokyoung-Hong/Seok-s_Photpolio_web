@@ -3,6 +3,7 @@ import datetime
 from PIL import Image
 from importlib_metadata import metadata
 import pandas as pd
+import pickle
 
 def buttons(f,j,button_count):
     f.write('        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">\n')
@@ -51,7 +52,7 @@ def html_copy(f,h,a,b) :
     cmt = ''.join(h[a-1:b])
     f.write(cmt)
 
-def insert_img(f,i,table) :
+def insert_img(f,i,table, tag_list) :
     
     country_name = ''
     placetext = ''
@@ -83,12 +84,28 @@ def insert_img(f,i,table) :
     if country_name != '' :
         f.write(f'\t\t\t\t<a href="country/{country_name}.html" style="text-decoration: none;" title="{country_name}" target="_self"> {country_name} </a>\n')
     f.write(f'\t\t\t\t{placetext}\n')
+    count = False
+    for tag in tag_list :
+        if str(i) in tag_list[tag] :
+            count = True
+    if count :
+        f.write(f'\t\t\t\t<details class = "tag_summary">\n')
+        f.write(f'\t\t\t\t<summary>Tags</summary>\n')
+        f.write(f'\t\t\t\t<p>\n')
+        for tag in tag_list :
+            if str(i) in tag_list[tag] :
+                f.write('\t\t\t\t<a class = "tag" href="tag/{}.html" style ="text-decoration: none;" target="_self"> {} </a>\n'.format(tag,tag))
+        
+        f.write(f'\t\t\t\t</details>\n')
+    
     f.write('\t\t\t</h4>\n')
 
 with open('index_page.html','r',encoding='UTF-8') as f :
     htmls = f.readlines()
     # print(htmls)
 
+with open('tags.pickle','rb') as f :
+    tag_list = pickle.load(f)
 
 
 # print(''.join(htmls[42:44]))
@@ -105,7 +122,7 @@ for j in range(21):
         f.write('\t\t<p>\n')
         
         for i in range(j*15+1,j*15+16) :
-            insert_img(f,i,table)
+            insert_img(f,i,table, tag_list)
 
         html_copy(f,htmls,92,99)
         
