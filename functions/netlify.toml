@@ -3,3 +3,9 @@
     from = "/"
     to = "https://seok.tk"
     status = 301
+
+[[redirects]]
+
+    from = "/index.html"
+    to = "https://seok.tk/index.html"
+    status = 301
