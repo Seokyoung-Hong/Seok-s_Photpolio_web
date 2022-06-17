@@ -133,7 +133,7 @@ for t_name in tag_list :
         
         # print(table)
         html_copy(f,htmls,1,12)
-        f.write(f'\t<link rel="canonical" href="https://photpolio-seok.netlify.app/pages/tag/{t_name}.html">\n')
+        f.write(f'\t<link rel="canonical" href="https://seok.tk/pages/tag/{t_name}.html">\n')
         html_copy(f,htmls,14,45)
         # buttons(f,j,21)
         f.write(f'\t\t<h2>{t_name}</h2>\n')

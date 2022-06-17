@@ -130,7 +130,7 @@ for c_name in country_list :
         
         # print(table)
         html_copy(f,htmls,1,12)
-        f.write(f'\t<link rel="canonical" href="https://photpolio-seok.netlify.app/pages/country/{c_name}.html">\n')
+        f.write(f'\t<link rel="canonical" href="https://seok.tk/pages/country/{c_name}.html">\n')
         html_copy(f,htmls,14,45)
         # buttons(f,j,21)
         

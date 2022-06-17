@@ -117,7 +117,7 @@ for j in range(21):
         # print(table)
         
         html_copy(f,htmls,1,13)
-        f.write(f'\t<link rel="canonical" href="https://photpolio-seok.netlify.app/pages/index_page{j}.html">\n')
+        f.write(f'\t<link rel="canonical" href="https://seok.tk/pages/index_page{j}.html">\n')
         html_copy(f,htmls,15,46)
         buttons(f,j,21)
         

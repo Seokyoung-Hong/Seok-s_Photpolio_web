@@ -22,20 +22,20 @@ with open('sitemap.xml','w') as f :
     f.write('<?xml version="1.0" encoding="UTF-8"?>')
     priority = 1000
     f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
-    f.write(f'\t<url>\n\t\t<loc>https://photpolio-seok.netlify.app/</loc>\n\t\t<priority>{priority}</priority>\n\t</url>\n')
+    f.write(f'\t<url>\n\t\t<loc>https://seok.tk/</loc>\n\t\t<priority>{priority}</priority>\n\t</url>\n')
     priority = 800
     for i in home :
-        f.write(f'\t<url>\n\t\t<loc>https://photpolio-seok.netlify.app/{i}</loc>\n\t\t<priority>{priority}</priority>\n\t</url>\n')
+        f.write(f'\t<url>\n\t\t<loc>https://seok.tk/{i}</loc>\n\t\t<priority>{priority}</priority>\n\t</url>\n')
     
     priority = 700
     for i in country :
-        f.write(f'\t<url>\n\t\t<loc>https://photpolio-seok.netlify.app/pages/country/{i}</loc>\n\t\t<priority>{priority}</priority>\n\t</url>\n')
+        f.write(f'\t<url>\n\t\t<loc>https://seok.tk/pages/country/{i}</loc>\n\t\t<priority>{priority}</priority>\n\t</url>\n')
     
     priority = 600
     for i in tag :
-        f.write(f'\t<url>\n\t\t<loc>https://photpolio-seok.netlify.app/pages/tag/{i}</loc>\n\t\t<priority>{priority}</priority>\n\t</url>\n')
+        f.write(f'\t<url>\n\t\t<loc>https://seok.tk/pages/tag/{i}</loc>\n\t\t<priority>{priority}</priority>\n\t</url>\n')
     
     priority = 300
     for i in pages :
-        f.write(f'\t<url>\n\t\t<loc>https://photpolio-seok.netlify.app/pages/{i}</loc>\n\t\t<priority>{priority}</priority>\n\t</url>\n')
+        f.write(f'\t<url>\n\t\t<loc>https://seok.tk/pages/{i}</loc>\n\t\t<priority>{priority}</priority>\n\t</url>\n')
     f.write('</urlset>')
