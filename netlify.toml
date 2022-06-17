@@ -1,5 +1,5 @@
 [[redirects]]
-    from = "https://photpolio-seok.netlify.app"
-    to = "seok.tk"
+    from = "/"
+    to = "https://seok.tk"
     status = 301
     force = true
