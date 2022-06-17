@@ -116,7 +116,9 @@ for j in range(21):
         table = df.to_dict()
         # print(table)
         
-        html_copy(f,htmls,1,44)
+        html_copy(f,htmls,1,13)
+        f.write(f'\t<link rel="canonical" href="https://photpolio-seok.netlify.app/pages/index_page{j}.html">\n')
+        html_copy(f,htmls,15,46)
         buttons(f,j,21)
         
         f.write('\t\t<p>\n')
@@ -124,10 +126,10 @@ for j in range(21):
         for i in range(j*15+1,j*15+16) :
             insert_img(f,i,table, tag_list)
 
-        html_copy(f,htmls,92,99)
+        html_copy(f,htmls,94,96)
         
         buttons(f,j,21)
         
-        html_copy(f,htmls,121,134)
+        html_copy(f,htmls,128,135)
 
 print('HTML pages made well')

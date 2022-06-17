@@ -132,8 +132,9 @@ for t_name in tag_list :
         
         
         # print(table)
-        
-        html_copy(f,htmls,1,42)
+        html_copy(f,htmls,1,12)
+        f.write(f'\t<link rel="canonical" href="https://photpolio-seok.netlify.app/pages/tag/{t_name}.html">\n')
+        html_copy(f,htmls,14,45)
         # buttons(f,j,21)
         f.write(f'\t\t<h2>{t_name}</h2>\n')
         
@@ -143,10 +144,10 @@ for t_name in tag_list :
             if str(i) in tag_list[t_name] :
                 insert_img(f,i,table)
                 
-        html_copy(f,htmls,91,94)
+        html_copy(f,htmls,93,95)
 
 # buttons(f,j,21)
 
-        html_copy(f,htmls,125,132)
+        html_copy(f,htmls,127,134)
 
 print('HTML pages made well')

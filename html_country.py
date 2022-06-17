@@ -129,8 +129,9 @@ for c_name in country_list :
         
         
         # print(table)
-        
-        html_copy(f,htmls,1,42)
+        html_copy(f,htmls,1,12)
+        f.write(f'\t<link rel="canonical" href="https://photpolio-seok.netlify.app/pages/country/{c_name}.html">\n')
+        html_copy(f,htmls,14,45)
         # buttons(f,j,21)
         
         f.write(f'\t\t<h2>{c_name}</h2>\n')
@@ -140,10 +141,10 @@ for c_name in country_list :
         for i in range(1,317) :
             insert_img(f,i,table,c_name)
                 
-        html_copy(f,htmls,91,94)
+        html_copy(f,htmls,93,95)
 
 # buttons(f,j,21)
 
-        html_copy(f,htmls,125,132)
+        html_copy(f,htmls,127,134)
 
 print('HTML pages made well')
