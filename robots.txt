@@ -9,4 +9,4 @@ Disallow:/index_tag.html
 Disallow:/*.py
 Disallow:/*.xlsx
 Disallow:/*.txt
-
+Sitemap: /sitemap.xml
