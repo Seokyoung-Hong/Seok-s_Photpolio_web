@@ -1,2 +1,12 @@
 User-agent: *
-Disallow:/
+Disllow:/images/
+Disallow:/Yolo/
+Disallow:/googledabd7aa89cd3d8f3.html
+Disallow:/index_copy.html
+Disallow:/index_country.html
+Disallow:/index_page.html
+Disallow:/index_tag.html
+Disallow:/*.py
+Disallow:/*.xlsx
+Disallow:/*.txt
+
