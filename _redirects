@@ -1,2 +1,3 @@
-/ https://seok.tk
-/index.html https://seok.tk
+https://photpolio-seok.netlfify.app/* https://seok.tk/:splat 301
+/ https://seok.tk 301
+/index.html https://seok.tk 301
