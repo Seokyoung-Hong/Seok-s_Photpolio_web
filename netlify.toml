@@ -1,5 +1,4 @@
 [[redirects]]
     from = "/"
-    to = "https://seok.tk"
+    to = "https://www.seok.tk"
     status = 301
-    force = true
