@@ -1,5 +1,5 @@
 User-agent: *
-Disllow:/images/
+Disallow:/images/
 Disallow:/Yolo/
 Disallow:/googledabd7aa89cd3d8f3.html
 Disallow:/index_copy.html
@@ -9,4 +9,5 @@ Disallow:/index_tag.html
 Disallow:/*.py
 Disallow:/*.xlsx
 Disallow:/*.txt
-Sitemap: /sitemap.xml
+Disallow:/header.html
+Sitemap: https://seok.txt/sitemap.xml
