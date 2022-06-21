@@ -132,9 +132,9 @@ for t_name in tag_list :
         
         
         # print(table)
-        html_copy(f,htmls,1,12)
+        html_copy(f,htmls,1,13)
         f.write(f'\t<link rel="canonical" href="https://seok.tk/pages/tag/{t_name}.html">\n')
-        html_copy(f,htmls,14,45)
+        html_copy(f,htmls,15,45)
         # buttons(f,j,21)
         f.write(f'\t\t<h2>{t_name}</h2>\n')
         
