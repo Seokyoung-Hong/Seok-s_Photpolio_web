@@ -19,6 +19,11 @@ for n,i in enumerate(country) :
     if '.html' not in i :
         country.pop(n)
 
+video = os.listdir('Video')
+for n,i in enumerate(country) :
+    if i[-5:] != '.html' :
+        country.pop(n)
+
 with open('sitemap.xml','w') as f :
     f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
     priority = 1
@@ -71,4 +76,17 @@ with open('sitemap.xml','w') as f :
         
         f.write(f'\t\t<priority> {priority} </priority>\n')
         f.write(f'\t</url>\n')
+
+    priority = 0.6
+    for i in video :
+        time = datetime.datetime.fromtimestamp(os.path.getmtime(f'Video/{i}'))
+        time_str = time.isoformat()
+        f.write(f'\t<url>\n')
+        f.write(f'\t\t<loc>https://seok.tk/Video/{i}</loc>\n')
+        f.write(f'\t\t<lastmod> {time_str} </lastmod>\n')
+        
+        f.write(f'\t\t<priority> {priority} </priority>\n')
+        f.write(f'\t</url>\n')
+    
+    
     f.write('</urlset>')

@@ -2,352 +2,357 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc> https://seok.tk/ </loc>
-		<lastmod> 2022-06-22T14:54:47.126018 </lastmod>
+		<lastmod> 2022-06-22T18:27:05.848760 </lastmod>
 		<priority> 1 </priority>
 	</url>
 	<url>
 		<loc> https://seok.tk/index.html </loc>
-		<lastmod> 2022-06-22T14:54:47.126018 </lastmod>
+		<lastmod> 2022-06-22T18:27:05.848760 </lastmod>
 		<priority> 0.8 </priority>
 	</url>
 	<url>
 		<loc> https://seok.tk/index_country.html </loc>
-		<lastmod> 2022-06-22T14:51:26.722235 </lastmod>
+		<lastmod> 2022-06-22T18:25:54.585478 </lastmod>
 		<priority> 0.8 </priority>
 	</url>
 	<url>
 		<loc> https://seok.tk/index_tag.html </loc>
-		<lastmod> 2022-06-22T14:51:14.307811 </lastmod>
+		<lastmod> 2022-06-22T18:26:15.676879 </lastmod>
 		<priority> 0.8 </priority>
 	</url>
 	<url>
 		<loc> https://seok.tk/index_page.html </loc>
-		<lastmod> 2022-06-22T14:51:20.101166 </lastmod>
+		<lastmod> 2022-06-22T18:26:06.817247 </lastmod>
 		<priority> 0.8 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/country/Austria.html</loc>
-		<lastmod> 2022-06-22T14:54:26.011434 </lastmod>
+		<lastmod> 2022-06-22T18:26:45.384840 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/country/France.html</loc>
-		<lastmod> 2022-06-22T14:54:26.005449 </lastmod>
+		<lastmod> 2022-06-22T18:26:45.378828 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/country/Germany.html</loc>
-		<lastmod> 2022-06-22T14:54:26.002484 </lastmod>
+		<lastmod> 2022-06-22T18:26:45.375863 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/country/Italia.html</loc>
-		<lastmod> 2022-06-22T14:54:26.007445 </lastmod>
+		<lastmod> 2022-06-22T18:26:45.381820 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/country/Monaco.html</loc>
-		<lastmod> 2022-06-22T14:54:26.009440 </lastmod>
+		<lastmod> 2022-06-22T18:26:45.382846 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/country/Nederland.html</loc>
-		<lastmod> 2022-06-22T14:54:26.014462 </lastmod>
+		<lastmod> 2022-06-22T18:26:45.386807 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/country/Russia.html</loc>
-		<lastmod> 2022-06-22T14:54:26.017418 </lastmod>
+		<lastmod> 2022-06-22T18:26:45.389799 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/country/South Korea.html</loc>
-		<lastmod> 2022-06-22T14:54:26.026432 </lastmod>
+		<lastmod> 2022-06-22T18:26:45.399772 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/country/Spain.html</loc>
-		<lastmod> 2022-06-22T14:54:26.016422 </lastmod>
+		<lastmod> 2022-06-22T18:26:45.388802 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/country/Switzerland.html</loc>
-		<lastmod> 2022-06-22T14:54:25.997498 </lastmod>
+		<lastmod> 2022-06-22T18:26:45.371847 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/airplane.html</loc>
-		<lastmod> 2022-06-22T14:54:42.614891 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.355445 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/backpack.html</loc>
-		<lastmod> 2022-06-22T14:54:42.658737 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.394341 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/bench.html</loc>
-		<lastmod> 2022-06-22T14:54:42.638801 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.377386 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/bicycle.html</loc>
-		<lastmod> 2022-06-22T14:54:42.597927 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.338491 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/bird.html</loc>
-		<lastmod> 2022-06-22T14:54:42.645773 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.382385 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/boat.html</loc>
-		<lastmod> 2022-06-22T14:54:42.634799 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.374394 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/book.html</loc>
-		<lastmod> 2022-06-22T14:54:42.690650 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.427254 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/bus.html</loc>
-		<lastmod> 2022-06-22T14:54:42.618876 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.358438 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/cake.html</loc>
-		<lastmod> 2022-06-22T14:54:42.683669 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.422266 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/car.html</loc>
-		<lastmod> 2022-06-22T14:54:42.607871 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.350459 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/carrot.html</loc>
-		<lastmod> 2022-06-22T14:54:42.681708 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.421270 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/chair.html</loc>
-		<lastmod> 2022-06-22T14:54:42.686663 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.424261 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/clock.html</loc>
-		<lastmod> 2022-06-22T14:54:42.694639 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.431246 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/cow.html</loc>
-		<lastmod> 2022-06-22T14:54:42.653749 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.389356 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/cup.html</loc>
-		<lastmod> 2022-06-22T14:54:42.672698 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.411300 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/dog.html</loc>
-		<lastmod> 2022-06-22T14:54:42.647766 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.384369 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/fork.html</loc>
-		<lastmod> 2022-06-22T14:54:42.675690 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.413291 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/giraffe.html</loc>
-		<lastmod> 2022-06-22T14:54:42.655743 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.391350 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/handbag.html</loc>
-		<lastmod> 2022-06-22T14:54:42.664719 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.402320 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/horse.html</loc>
-		<lastmod> 2022-06-22T14:54:42.649759 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.386363 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/kite.html</loc>
-		<lastmod> 2022-06-22T14:54:42.670704 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.409300 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/knife.html</loc>
-		<lastmod> 2022-06-22T14:54:42.677707 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.417283 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/motorcycle.html</loc>
-		<lastmod> 2022-06-22T14:54:42.610862 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.351456 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/orange.html</loc>
-		<lastmod> 2022-06-22T14:54:42.679680 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.418279 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/person.html</loc>
-		<lastmod> 2022-06-22T14:54:42.593935 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.334502 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/sheep.html</loc>
-		<lastmod> 2022-06-22T14:54:42.651754 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.387361 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/suitcase.html</loc>
-		<lastmod> 2022-06-22T14:54:42.667711 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.406323 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/tie.html</loc>
-		<lastmod> 2022-06-22T14:54:42.665717 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.404315 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/toilet.html</loc>
-		<lastmod> 2022-06-22T14:54:42.688656 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.426256 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/train.html</loc>
-		<lastmod> 2022-06-22T14:54:42.622831 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.362427 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/truck.html</loc>
-		<lastmod> 2022-06-22T14:54:42.627819 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.368411 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/umbrella.html</loc>
-		<lastmod> 2022-06-22T14:54:42.660732 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.399333 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag/vase.html</loc>
-		<lastmod> 2022-06-22T14:54:42.696634 </lastmod>
+		<lastmod> 2022-06-22T18:27:00.434240 </lastmod>
 		<priority> 0.5 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page1.html</loc>
-		<lastmod> 2022-06-22T14:54:33.682232 </lastmod>
+		<lastmod> 2022-06-22T18:26:51.251367 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page10.html</loc>
-		<lastmod> 2022-06-22T14:54:34.545922 </lastmod>
+		<lastmod> 2022-06-22T18:26:52.109035 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page11.html</loc>
-		<lastmod> 2022-06-22T14:54:34.638701 </lastmod>
+		<lastmod> 2022-06-22T18:26:52.200791 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page12.html</loc>
-		<lastmod> 2022-06-22T14:54:34.730455 </lastmod>
+		<lastmod> 2022-06-22T18:26:52.294574 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page13.html</loc>
-		<lastmod> 2022-06-22T14:54:34.823181 </lastmod>
+		<lastmod> 2022-06-22T18:26:52.389281 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page14.html</loc>
-		<lastmod> 2022-06-22T14:54:34.916930 </lastmod>
+		<lastmod> 2022-06-22T18:26:52.482061 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page15.html</loc>
-		<lastmod> 2022-06-22T14:54:35.044589 </lastmod>
+		<lastmod> 2022-06-22T18:26:52.589742 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page16.html</loc>
-		<lastmod> 2022-06-22T14:54:35.143325 </lastmod>
+		<lastmod> 2022-06-22T18:26:52.685511 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page17.html</loc>
-		<lastmod> 2022-06-22T14:54:35.236077 </lastmod>
+		<lastmod> 2022-06-22T18:26:52.778235 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page18.html</loc>
-		<lastmod> 2022-06-22T14:54:35.355757 </lastmod>
+		<lastmod> 2022-06-22T18:26:52.892953 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page19.html</loc>
-		<lastmod> 2022-06-22T14:54:35.448535 </lastmod>
+		<lastmod> 2022-06-22T18:26:52.985678 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page2.html</loc>
-		<lastmod> 2022-06-22T14:54:33.778004 </lastmod>
+		<lastmod> 2022-06-22T18:26:51.349111 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page20.html</loc>
-		<lastmod> 2022-06-22T14:54:35.542258 </lastmod>
+		<lastmod> 2022-06-22T18:26:53.082417 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page21.html</loc>
-		<lastmod> 2022-06-22T14:54:35.642032 </lastmod>
+		<lastmod> 2022-06-22T18:26:53.177162 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page3.html</loc>
-		<lastmod> 2022-06-22T14:54:33.872723 </lastmod>
+		<lastmod> 2022-06-22T18:26:51.448836 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page4.html</loc>
-		<lastmod> 2022-06-22T14:54:33.974451 </lastmod>
+		<lastmod> 2022-06-22T18:26:51.544588 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page5.html</loc>
-		<lastmod> 2022-06-22T14:54:34.066205 </lastmod>
+		<lastmod> 2022-06-22T18:26:51.638299 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page6.html</loc>
-		<lastmod> 2022-06-22T14:54:34.162973 </lastmod>
+		<lastmod> 2022-06-22T18:26:51.732075 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page7.html</loc>
-		<lastmod> 2022-06-22T14:54:34.256696 </lastmod>
+		<lastmod> 2022-06-22T18:26:51.824825 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page8.html</loc>
-		<lastmod> 2022-06-22T14:54:34.347453 </lastmod>
+		<lastmod> 2022-06-22T18:26:51.914557 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/index_page9.html</loc>
-		<lastmod> 2022-06-22T14:54:34.445192 </lastmod>
+		<lastmod> 2022-06-22T18:26:52.012295 </lastmod>
 		<priority> 0.4 </priority>
 	</url>
 	<url>
 		<loc>https://seok.tk/pages/tag</loc>
 		<lastmod> 2022-06-20T08:45:51.184273 </lastmod>
 		<priority> 0.4 </priority>
+	</url>
+	<url>
+		<loc>https://seok.tk/Video/video.html</loc>
+		<lastmod> 2022-06-22T17:12:44.594252 </lastmod>
+		<priority> 0.6 </priority>
 	</url>
 </urlset>
