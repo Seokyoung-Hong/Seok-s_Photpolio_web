@@ -63,7 +63,7 @@ with open('index_copy.html','r',encoding='UTF-8') as f :
 
 
 with open(f'index.html','w',encoding='UTF-8') as f :
-    a = 14 
+    a = 13
     changes = a - 13
     html_copy(f,htmls,1,61+changes)
     # buttons(f,j,21)
