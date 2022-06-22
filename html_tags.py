@@ -46,7 +46,10 @@ def buttons(f,j,button_count):
     f.write('            </div>\n')
     f.write('        </div>\n')
     
-    
+def search(list,includs) :
+    for n,i in enumerate(list) :
+        if includs in i :
+            return n
 
 def html_copy(f,h,a,b) :
     cmt = ''.join(h[a-1:b])
@@ -129,13 +132,15 @@ for t_name in tag_list :
     else :
         print(t_name,tag_list[t_name])
     with open(f'pages/tag/{t_name}.html','w',encoding='UTF-8') as f :
-        a = 14 # 처음 끝나는 줄
-        changes = a - 13
         
-        # print(table)
-        html_copy(f,htmls,1,13+changes)
+        
+        index1 = search(htmls, '<link rel="canonical" href="')
+        html_copy(f,htmls,1,index1)
         f.write(f'\t<link rel="canonical" href="https://seok.tk/pages/tag/{t_name}.html">\n')
-        html_copy(f,htmls,15+changes,45+changes)
+        
+        index2 = search(htmls, '<div class="btn-group" role="group" aria-label="Basic radio toggle button group">')
+        html_copy(f,htmls,index1+2,index2)
+        
         # buttons(f,j,21)
         f.write(f'\t\t<h2>{t_name}</h2>\n')
         
@@ -144,11 +149,14 @@ for t_name in tag_list :
         for i in range(1,317) :
             if str(i) in tag_list[t_name] :
                 insert_img(f,i,table)
-                
-        html_copy(f,htmls,93+changes,95+changes)
+        index3 = search(htmls,'</body>')
+        index4 = search(htmls, '<footer>')+1
+        html_copy(f,htmls,index3,index4)
 
 # buttons(f,j,21)
 
-        html_copy(f,htmls,127+changes,134+changes)
+        index5 = search(htmls, '<div id="footer">')+1
+        end = search(htmls,'</html>') +1
+        html_copy(f,htmls,index5,end)
 
 print('HTML pages made well')

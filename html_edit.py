@@ -52,6 +52,11 @@ def html_copy(f,h,a,b) :
     cmt = ''.join(h[a-1:b])
     f.write(cmt)
 
+def search(list,includs) :
+    for n,i in enumerate(list) :
+        if includs in i :
+            return n
+
 def insert_img(f,i,table, tag_list) :
     
     country_name = ''
@@ -115,11 +120,14 @@ for j in range(21):
         df = pd.read_excel('img_data.xlsx')
         table = df.to_dict()
         # print(table)
-        a = 14 # 처음 끝나는 줄
-        changes = a - 13
-        html_copy(f,htmls,1,14+changes)
+        
+        index1 = search(htmls, '<link rel="canonical" href="')
+        html_copy(f,htmls,1,index1)
         f.write(f'\t\t<link rel="canonical" href="https://seok.tk/pages/index_page{j}.html">\n')
-        html_copy(f,htmls,16+changes,47+changes)
+        
+        index2 = search(htmls, '<div class="btn-group" role="group" aria-label="Basic radio toggle button group">')
+        html_copy(f,htmls,index1+2,index2)
+        
         buttons(f,j,21)
         
         f.write('\t\t<p>\n')
@@ -127,10 +135,15 @@ for j in range(21):
         for i in range(j*15+1,j*15+16) :
             insert_img(f,i,table, tag_list)
 
-        html_copy(f,htmls,95+changes,97+changes)
+        
+        index3 = search(htmls,'</body>')
+        index4 = search(htmls, '<footer>')+1        
+        html_copy(f,htmls,index3,index4)
         
         buttons(f,j,21)
         
-        html_copy(f,htmls,129+changes,136+changes)
-
+        index5 = search(htmls, '<div id="footer">')+1
+        end = search(htmls,'</html>') +1
+        html_copy(f,htmls,index5,end)
+        
 print('HTML pages made well')
