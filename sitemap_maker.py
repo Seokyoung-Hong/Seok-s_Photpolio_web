@@ -27,8 +27,8 @@ with open('sitemap.xml','w') as f :
     time_str = time.isoformat()
     f.write(f'\t<url>\n')
     f.write(f'\t\t<loc> https://seok.tk/ </loc>\n')
-    f.write(f'\t\t<priority> {priority} </priority>\n')
     f.write(f'\t\t<lastmod> {time_str} </lastmod>\n')
+    f.write(f'\t\t<priority> {priority} </priority>\n')
     f.write(f'\t</url>\n')
     priority = 0.8
     for i in home :
@@ -36,8 +36,8 @@ with open('sitemap.xml','w') as f :
         time_str = time.isoformat()
         f.write(f'\t<url>\n')
         f.write(f'\t\t<loc> https://seok.tk/{i} </loc>\n')
-        f.write(f'\t\t<priority> {priority} </priority>\n')
         f.write(f'\t\t<lastmod> {time_str} </lastmod>\n')
+        f.write(f'\t\t<priority> {priority} </priority>\n')
         f.write(f'\t</url>\n')
     
     priority = 0.5
@@ -46,8 +46,9 @@ with open('sitemap.xml','w') as f :
         time_str = time.isoformat()
         f.write(f'\t<url>\n')
         f.write(f'\t\t<loc>https://seok.tk/pages/country/{i}</loc>\n')
-        f.write(f'\t\t<priority> {priority} </priority>\n')
         f.write(f'\t\t<lastmod> {time_str} </lastmod>\n')
+        
+        f.write(f'\t\t<priority> {priority} </priority>\n')
         f.write(f'\t</url>\n')
     priority = 0.5
     for i in tag :
@@ -55,8 +56,9 @@ with open('sitemap.xml','w') as f :
         time_str = time.isoformat()
         f.write(f'\t<url>\n')
         f.write(f'\t\t<loc>https://seok.tk/pages/tag/{i}</loc>\n')
-        f.write(f'\t\t<priority> {priority} </priority>\n')
         f.write(f'\t\t<lastmod> {time_str} </lastmod>\n')
+        
+        f.write(f'\t\t<priority> {priority} </priority>\n')
         f.write(f'\t</url>\n')
     
     priority = 0.4
@@ -65,7 +67,8 @@ with open('sitemap.xml','w') as f :
         time_str = time.isoformat()
         f.write(f'\t<url>\n')
         f.write(f'\t\t<loc>https://seok.tk/pages/{i}</loc>\n')
-        f.write(f'\t\t<priority> {priority} </priority>\n')
         f.write(f'\t\t<lastmod> {time_str} </lastmod>\n')
+        
+        f.write(f'\t\t<priority> {priority} </priority>\n')
         f.write(f'\t</url>\n')
     f.write('</urlset>')
