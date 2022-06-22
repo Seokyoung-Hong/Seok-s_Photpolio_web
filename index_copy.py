@@ -63,8 +63,9 @@ with open('index_copy.html','r',encoding='UTF-8') as f :
 
 
 with open(f'index.html','w',encoding='UTF-8') as f :
-    
-    html_copy(f,htmls,1,61)
+    a = 14 
+    changes = a - 13
+    html_copy(f,htmls,1,61+changes)
     # buttons(f,j,21)
     
     for i in range(1,317):
@@ -78,7 +79,7 @@ with open(f'index.html','w',encoding='UTF-8') as f :
         f.write('\t\t\t\t\t</div>\n')
     
     # html_copy(f,htmls,47,71)
-    html_copy(f,htmls,908,932)
+    html_copy(f,htmls,908+changes,932+changes)
     
 
 print('HTML pages copied well')

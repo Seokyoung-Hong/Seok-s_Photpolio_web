@@ -126,12 +126,12 @@ table2 = df2.to_dict
 # print(tag_list)
 for c_name in country_list :
     with open(f'pages/country/{c_name}.html','w',encoding='UTF-8') as f :
-        
-        
+        a = 14 # 처음 끝나는 줄
+        changes = a - 13
         # print(table)
-        html_copy(f,htmls,1,13)
+        html_copy(f,htmls,1,13+changes)
         f.write(f'\t<link rel="canonical" href="https://seok.tk/pages/country/{c_name}.html">\n')
-        html_copy(f,htmls,15,45)
+        html_copy(f,htmls,15+changes,45+changes)
         # buttons(f,j,21)
         
         f.write(f'\t\t<h2>{c_name}</h2>\n')
@@ -141,10 +141,10 @@ for c_name in country_list :
         for i in range(1,317) :
             insert_img(f,i,table,c_name)
                 
-        html_copy(f,htmls,93,95)
+        html_copy(f,htmls,93+changes,95+changes)
 
 # buttons(f,j,21)
 
-        html_copy(f,htmls,127,134)
+        html_copy(f,htmls,127+changes,134+changes)
 
 print('HTML pages made well')

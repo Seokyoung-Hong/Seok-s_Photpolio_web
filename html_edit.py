@@ -115,10 +115,11 @@ for j in range(21):
         df = pd.read_excel('img_data.xlsx')
         table = df.to_dict()
         # print(table)
-        
-        html_copy(f,htmls,1,14)
+        a = 14 # 처음 끝나는 줄
+        changes = a - 13
+        html_copy(f,htmls,1,14+changes)
         f.write(f'\t\t<link rel="canonical" href="https://seok.tk/pages/index_page{j}.html">\n')
-        html_copy(f,htmls,16,47)
+        html_copy(f,htmls,16+changes,47+changes)
         buttons(f,j,21)
         
         f.write('\t\t<p>\n')
@@ -126,10 +127,10 @@ for j in range(21):
         for i in range(j*15+1,j*15+16) :
             insert_img(f,i,table, tag_list)
 
-        html_copy(f,htmls,95,97)
+        html_copy(f,htmls,95+changes,97+changes)
         
         buttons(f,j,21)
         
-        html_copy(f,htmls,129,136)
+        html_copy(f,htmls,129+changes,136+changes)
 
 print('HTML pages made well')
