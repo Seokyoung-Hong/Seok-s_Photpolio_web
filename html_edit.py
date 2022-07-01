@@ -81,13 +81,13 @@ def insert_img(f,i,table, tag_list) :
     # list = meta_data[36867].split(' ')
     # list2 = list[0].split(':')
     
-    f.write(f'\t\t\t<a href="../images/{i}_1.webp" target="_blank">\n')
-    f.write(f'\t\t\t\t<img src=\"../images/{i}_1.webp\" class=\"img_set\">\n')
+    f.write(f'\t\t\t<a href="https://seok.tk/images/{i}_1.webp" target="_blank">\n')
+    f.write(f'\t\t\t\t<img src=\"https://seok.tk/images/{i}_1.webp\" class=\"img_set\">\n')
     f.write(f'\t\t\t</a>\n')
     f.write(f'\t\t\t<h4>\n')
     # f.write(f'\t\t\t\t\t{list2[0]} {list2[1]} {list2[2]}\n')
     if country_name != '' :
-        f.write(f'\t\t\t\t<a href="country/{country_name}.html" style="text-decoration: none;" title="{country_name}" target="_self"> {country_name} </a>\n')
+        f.write(f'\t\t\t\t<a href="https://seok.tk/pages/country/{country_name}.html" style="text-decoration: none;" title="{country_name}" target="_self"> {country_name} </a>\n')
     f.write(f'\t\t\t\t{placetext}\n')
     count = False
     for tag in tag_list :
@@ -99,7 +99,7 @@ def insert_img(f,i,table, tag_list) :
         f.write(f'\t\t\t\t<p>\n')
         for tag in tag_list :
             if str(i) in tag_list[tag] :
-                f.write('\t\t\t\t<a class = "tag" href="tag/{}.html" style ="text-decoration: none;" target="_self"> {} </a>\n'.format(tag,tag))
+                f.write('\t\t\t\t<a class = "tag" href="https://seok.tk/pages/tag/{}.html" style ="text-decoration: none;" target="_self"> {} </a>\n'.format(tag,tag))
         
         f.write(f'\t\t\t\t</details>\n')
     

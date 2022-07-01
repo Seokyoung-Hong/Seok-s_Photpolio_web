@@ -10,4 +10,4 @@ Disallow:/*.py
 Disallow:/*.xlsx
 Disallow:/*.txt
 Disallow:/header.html
-Sitemap: https://seok.txt/sitemap.xml
+Sitemap: https://seok.tk/sitemap.xml

@@ -75,7 +75,7 @@ with open(f'index.html','w',encoding='UTF-8') as f :
             f.write('\t\t\t\t\t<div class="carousel-item active">\n')
         else :
             f.write('\t\t\t\t\t<div class="carousel-item">\n')
-        f.write(f'\t\t\t\t\t<img src="images/{i}_1.webp" class="d-block w-100" alt="{i}_1.webp">\n')
+        f.write(f'\t\t\t\t\t<img src="https://seok.tk/images/{i}_1.webp" class="d-block w-100" alt="{i}_1.webp">\n')
         f.write('\t\t\t\t\t</div>\n')
     
     # html_copy(f,htmls,47,71)
