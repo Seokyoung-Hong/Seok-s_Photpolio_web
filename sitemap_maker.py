@@ -6,17 +6,17 @@ home = ['index.html','index_country.html','index_tag.html','index_page.html']
 
 pages = os.listdir('pages/')
 for n,i in enumerate(pages) :
-    if '.html' not in i :
+    if i[-5:] != '.html' :
         pages.pop(n)
 
 tag = os.listdir('pages/tag/')
 for n,i in enumerate(tag) :
-    if '.html' not in i :
+    if i[-5:] != '.html' :
         tag.pop(n)
 
 country = os.listdir('pages/country')
 for n,i in enumerate(country) :
-    if '.html' not in i :
+    if i[-5:] != '.html' :
         country.pop(n)
 
 video = os.listdir('Video')
@@ -90,3 +90,4 @@ with open('sitemap.xml','w') as f :
     
     
     f.write('</urlset>')
+print('sitemap made well')

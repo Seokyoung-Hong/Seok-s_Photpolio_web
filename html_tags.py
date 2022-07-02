@@ -129,8 +129,8 @@ table2 = df2.to_dict
 for t_name in tag_list :
     if len(tag_list[t_name]) == 0 :
         continue
-    else :
-        print(t_name,tag_list[t_name])
+    # else :
+        # print(t_name,tag_list[t_name])
     with open(f'pages/tag/{t_name}.html','w',encoding='UTF-8') as f :
         
         
