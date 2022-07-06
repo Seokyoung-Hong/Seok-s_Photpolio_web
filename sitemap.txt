@@ -1,6 +1,3 @@
-https://seok.tk/index_country.html
-https://seok.tk/index_tag.html
-https://seok.tk/index_page.html
 https://seok.tk/country_choice.html
 https://seok.tk/tag_choice.html
 https://seok.tk/pages/country/Austria.html

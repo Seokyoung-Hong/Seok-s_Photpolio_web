@@ -1,7 +1,7 @@
 import os
 import datetime
 
-home = ['index_country.html','index_tag.html','index_page.html','country_choice.html','tag_choice.html']
+home = ['country_choice.html','tag_choice.html']
 
 
 pages = os.listdir('pages/')

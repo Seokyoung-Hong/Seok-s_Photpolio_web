@@ -6,21 +6,6 @@
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://seok.tk/index_country.html</loc>
-		<lastmod>2022-07-03T01:14:46.555798</lastmod>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>https://seok.tk/index_tag.html</loc>
-		<lastmod>2022-07-03T01:14:55.890264</lastmod>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>https://seok.tk/index_page.html</loc>
-		<lastmod>2022-07-03T01:14:50.143473</lastmod>
-		<priority>0.8</priority>
-	</url>
-	<url>
 		<loc>https://seok.tk/country_choice.html</loc>
 		<lastmod>2022-07-07T01:09:49.214132</lastmod>
 		<priority>0.8</priority>
