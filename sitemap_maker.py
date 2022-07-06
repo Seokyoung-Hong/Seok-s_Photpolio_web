@@ -1,7 +1,7 @@
 import os
 import datetime
 
-home = ['index.html','index_country.html','index_tag.html','index_page.html']
+home = ['index_country.html','index_tag.html','index_page.html','country_choice.html','tag_choice.html']
 
 
 pages = os.listdir('pages/')
@@ -41,7 +41,7 @@ with open('sitemap.xml','w',encoding='UTF-8') as f :
         time = datetime.datetime.fromtimestamp(os.path.getmtime(f'{i}'))
         time_str = time.isoformat()
         f.write(f'\t<url>\n')
-        f.write(f'\t\t<loc>https://seok.tk/</loc>\n')
+        f.write(f'\t\t<loc>https://seok.tk/{i}</loc>\n')
         f.write(f'\t\t<lastmod>{time_str}</lastmod>\n')
         f.write(f'\t\t<priority>{priority}</priority>\n')
         f.write(f'\t</url>\n')
@@ -51,8 +51,9 @@ with open('sitemap.xml','w',encoding='UTF-8') as f :
         time = datetime.datetime.fromtimestamp(os.path.getmtime(f'pages/country/{i}'))
         time_str = time.isoformat()
         f.write(f'\t<url>\n')
-        f.write(f'\t\t<loc>https://seok.tk/</loc>\n')
+        f.write(f'\t\t<loc>https://seok.tk/pages/country/{i}</loc>\n')
         f.write(f'\t\t<lastmod>{time_str}</lastmod>\n')
+        
         f.write(f'\t\t<priority>{priority}</priority>\n')
         f.write(f'\t</url>\n')
     priority = 0.5
@@ -60,8 +61,9 @@ with open('sitemap.xml','w',encoding='UTF-8') as f :
         time = datetime.datetime.fromtimestamp(os.path.getmtime(f'pages/tag/{i}'))
         time_str = time.isoformat()
         f.write(f'\t<url>\n')
-        f.write(f'\t\t<loc>https://seok.tk/</loc>\n')
+        f.write(f'\t\t<loc>https://seok.tk/pages/tag/{i}</loc>\n')
         f.write(f'\t\t<lastmod>{time_str}</lastmod>\n')
+        
         f.write(f'\t\t<priority>{priority}</priority>\n')
         f.write(f'\t</url>\n')
     
@@ -70,8 +72,9 @@ with open('sitemap.xml','w',encoding='UTF-8') as f :
         time = datetime.datetime.fromtimestamp(os.path.getmtime(f'pages/{i}'))
         time_str = time.isoformat()
         f.write(f'\t<url>\n')
-        f.write(f'\t\t<loc>https://seok.tk/</loc>\n')
+        f.write(f'\t\t<loc>https://seok.tk/pages/{i}</loc>\n')
         f.write(f'\t\t<lastmod>{time_str}</lastmod>\n')
+        
         f.write(f'\t\t<priority>{priority}</priority>\n')
         f.write(f'\t</url>\n')
 
@@ -80,11 +83,22 @@ with open('sitemap.xml','w',encoding='UTF-8') as f :
         time = datetime.datetime.fromtimestamp(os.path.getmtime(f'Video/{i}'))
         time_str = time.isoformat()
         f.write(f'\t<url>\n')
-        f.write(f'\t\t<loc>https://seok.tk/</loc>\n')
+        f.write(f'\t\t<loc>https://seok.tk/Video/{i}</loc>\n')
         f.write(f'\t\t<lastmod>{time_str}</lastmod>\n')
+        
         f.write(f'\t\t<priority>{priority}</priority>\n')
         f.write(f'\t</url>\n')
-    
-    
     f.write('</urlset>')
+
+with open('sitemap.txt','w') as f:
+    for i in home :
+        f.write(f'https://seok.tk/{i}\n')
+    for i in country :
+        f.write(f'https://seok.tk/pages/country/{i}\n')
+    for i in tag :
+        f.write(f'https://seok.tk/pages/tag/{i}\n')
+    for i in pages :
+        f.write(f'https://seok.tk/pages/{i}\n')
+    for i in video :
+        f.write(f'https://seok.tk/Video/{i}')
 print('sitemap made well')
