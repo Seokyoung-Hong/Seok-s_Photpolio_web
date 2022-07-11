@@ -56,7 +56,8 @@ def html_copy(f,h,a,b) :
     f.write(cmt)
 
 def insert_img(f,i,table) :
-    
+    if i == 145 or i == 146 :
+        return 0
     country_name = ''
     placetext = ''
     if 'nan' != str(table['country'][i-1]) :
