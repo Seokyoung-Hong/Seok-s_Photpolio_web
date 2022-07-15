@@ -51,7 +51,10 @@ def html_copy(f,h,a,b) :
     cmt = ''.join(h[a-1:b])
     f.write(cmt)
 
-
+def search(list,includs) :
+    for n,i in enumerate(list) :
+        if includs in i :
+            return n
 
 with open('index_copy.html','r',encoding='UTF-8') as f :
     htmls = f.readlines()
@@ -65,7 +68,8 @@ with open('index_copy.html','r',encoding='UTF-8') as f :
 with open(f'index.html','w',encoding='UTF-8') as f :
     a = 13
     changes = a - 13
-    html_copy(f,htmls,1,61+changes)
+    index1 = search(htmls, '<div class="carousel-inner">')
+    html_copy(f,htmls,1,index1)
     # buttons(f,j,21)
     
     for i in range(1,317):
@@ -79,7 +83,9 @@ with open(f'index.html','w',encoding='UTF-8') as f :
         f.write('\t\t\t\t\t</div>\n')
     
     # html_copy(f,htmls,47,71)
-    html_copy(f,htmls,908+changes,932+changes)
-    
+    index2 = search(htmls, '<button class="carousel-control-prev"')
+    index3 = search(htmls, '</html>')
+    html_copy(f,htmls,index2, index3)
+    f.write('</html>')
 
 print('HTML pages copied well')
