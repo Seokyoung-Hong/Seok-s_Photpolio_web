@@ -7,7 +7,7 @@ import pickle
 from module import *
 
 
-with open('index_country.html','r',encoding='UTF-8') as f :
+with open('index_place.html','r',encoding='UTF-8') as f :
     htmls = f.readlines()
     # print(htmls)
 
