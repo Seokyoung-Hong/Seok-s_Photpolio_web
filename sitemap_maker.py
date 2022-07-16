@@ -19,6 +19,11 @@ for n,i in enumerate(country) :
     if i[-5:] != '.html' :
         country.pop(n)
 
+place = os.listdir('pages/place')
+for n,i in enumerate(place) :
+    if i[-5:] != '.html' :
+        place.pop(n)
+
 video = os.listdir('Video')
 for n,i in enumerate(country) :
     if i[-5:] != '.html' :
@@ -56,6 +61,18 @@ with open('sitemap.xml','w',encoding='UTF-8') as f :
         
         f.write(f'\t\t<priority>{priority}</priority>\n')
         f.write(f'\t</url>\n')
+    
+    priority = 0.5
+    for i in place :
+        time = datetime.datetime.fromtimestamp(os.path.getmtime(f'pages/place/{i}'))
+        time_str = time.isoformat()
+        f.write(f'\t<url>\n')
+        f.write(f'\t\t<loc>https://seok.tk/pages/place/{i}</loc>\n')
+        f.write(f'\t\t<lastmod>{time_str}</lastmod>\n')
+        
+        f.write(f'\t\t<priority>{priority}</priority>\n')
+        f.write(f'\t</url>\n')
+    
     priority = 0.5
     for i in tag :
         time = datetime.datetime.fromtimestamp(os.path.getmtime(f'pages/tag/{i}'))
@@ -95,6 +112,8 @@ with open('sitemap.txt','w') as f:
         f.write(f'https://seok.tk/{i}\n')
     for i in country :
         f.write(f'https://seok.tk/pages/country/{i}\n')
+    for i in place :
+        f.write(f'https://seok.tk/pages/place/{i}\n')
     for i in tag :
         f.write(f'https://seok.tk/pages/tag/{i}\n')
     for i in pages :
