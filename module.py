@@ -5,7 +5,7 @@ def insert_img(f,i,table,tag_list,c_name='nan',country=False,place=False) :
     place_name = ''
     placetext = ''
     
-    if c_name == str(table['country'][i-1]) or c_name == str(table['place'][i-1]) or ('nan' != str(table['place'][i-1]) and c_name == 'nan' and country == False and place == False):
+    if c_name == str(table['country'][i-1]) or c_name in str(table['place'][i-1]) or ('nan' != str(table['place'][i-1]) and c_name == 'nan' and country == False and place == False):
         country_name = '{}'.format(table['country'][i-1])
         # placetext = '{}'.format(table['place'][i-1])
         if 'nan' != str(table['place'][i-1]) :
@@ -20,7 +20,7 @@ def insert_img(f,i,table,tag_list,c_name='nan',country=False,place=False) :
                 return 0
             placetext = placetext + '\n'
     else :
-        if country :
+        if country or place:
             return 0
     # imgfile = f"D:/imgs/origin/{i}_1.jpg"
     # img = Image.open(imgfile)
