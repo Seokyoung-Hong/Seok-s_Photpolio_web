@@ -23,7 +23,7 @@ place_list = []
 for img in table['place']:
     if table['place'][img] not in place_list and str(table['place'][img]) != 'nan':
         place_list.append(str(table['place'][img]))
-
+        
 
 with open('tags.pickle','rb') as f :
     tag_list = pickle.load(f)
@@ -49,7 +49,7 @@ for c_name in place_list :
         f.write('\t\t<p>\n')
         
         for i in range(1,317) :
-            insert_img(f,i,table,c_name,place=True)
+            insert_img(f,i,table,tag_list,c_name,place=True)
         
         index3 = search(htmls,'</body>')
         index4 = search(htmls, '<footer>')+1
