@@ -38,7 +38,7 @@ for t_name in tag_list:
         index1 = search(htmls, '<link rel="canonical" href="')
         html_copy(f, htmls, 1, index1)
         f.write(
-            f'\t<link rel="canonical" href="https://seok.tk/pages/tag/{t_name}.html">\n')
+            f'\t<link rel="canonical" href="https://sio2.pe.kr/pages/tag/{t_name}.html">\n')
 
         index2 = search(
             htmls, '<div class="btn-group" role="group" aria-label="Basic radio toggle button group">')

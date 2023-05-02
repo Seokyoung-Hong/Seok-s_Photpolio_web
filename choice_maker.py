@@ -7,7 +7,7 @@ import pickle
 from module import *
 from glob import glob
 
-with open('index_country.html','r',encoding='UTF-8') as f :
+with open('index_country.html', 'r', encoding='UTF-8') as f:
     htmls = f.readlines()
     # print(htmls)
 
@@ -20,7 +20,7 @@ for img in table['country']:
         country_list.append(str(table['country'][img]))
 
 
-with open('tags.pickle','rb') as f :
+with open('tags.pickle', 'rb') as f:
     tag_list = pickle.load(f)
 df2 = pd.read_csv('Yolo/tags.csv')
 table2 = df2.to_dict
@@ -28,41 +28,36 @@ table2 = df2.to_dict
 choice_list = glob('pages/*/')
 
 choice_name = []
-for i in choice_list :
+for i in choice_list:
     temp = i.split('\\')[1]
     choice_name.append(temp)
-print(choice_list,choice_name)
+print(choice_list, choice_name)
 
 
-for choice in choice_name :
-    with open(f'{choice}_choice.html','w',encoding='UTF-8') as f:
-        index1 = search(htmls, '<link rel="canonical" href="https://seok.tk/pages/index_page0.html">')
-        html_copy(f,htmls,1,index1)
-        f.write(f'\t<link rel="canonical" href="https://seok.tk/{choice}_choice.html">\n')
-        
-        index2 = search(htmls, '<div class="btn-group" role="group" aria-label="Basic radio toggle button group">')
-        html_copy(f,htmls,index1+2,index2)
+for choice in choice_name:
+    with open(f'{choice}_choice.html', 'w', encoding='UTF-8') as f:
+        index1 = search(
+            htmls, '<link rel="canonical" href="https://sio2.pe.kr/pages/index_page0.html">')
+        html_copy(f, htmls, 1, index1)
+        f.write(
+            f'\t<link rel="canonical" href="https://sio2.pe.kr/{choice}_choice.html">\n')
+
+        index2 = search(
+            htmls, '<div class="btn-group" role="group" aria-label="Basic radio toggle button group">')
+        html_copy(f, htmls, index1+2, index2)
         f.write(f'\t\t<h2>{choice} lists</h2>\n\t\t<ul type="square">\n')
         file_list = os.listdir(f'pages/{choice}')
-        for file_name in file_list :
-            f.write(f'\t\t\t<li><a style="text-decoration: none; font-size: 120%;" href="https://seok.tk/pages/{choice}/{file_name}" target="_self"> {file_name[:-5]} </a></li>\n')
+        for file_name in file_list:
+            f.write(
+                f'\t\t\t<li><a style="text-decoration: none; font-size: 120%;" href="https://sio2.pe.kr/pages/{choice}/{file_name}" target="_self"> {file_name[:-5]} </a></li>\n')
         f.write('\t\t</ul>\n')
         f.write('\t</body>\n')
         f.write('\t<footer>\n')
-        
-        index3 = search(htmls, '<p class = "footer text">Taken by Seok_young Hong</p>')
-        html_copy(f,htmls,index3,-1)
+
+        index3 = search(
+            htmls, '<p class = "footer text">Taken by Seok_young Hong</p>')
+        html_copy(f, htmls, index3, -1)
         f.write('</html>')
-        
-
-
-
-
-
-
-
-
-
 
 
 '''
@@ -72,9 +67,9 @@ for c_name in country_list :
         # print(table)
         
         
-        index1 = search(htmls, '<link rel="canonical" href="https://seok.tk/pages/index_page0.html">')
+        index1 = search(htmls, '<link rel="canonical" href="https://sio2.pe.kr/pages/index_page0.html">')
         html_copy(f,htmls,1,index1)
-        f.write(f'\t<link rel="canonical" href="https://seok.tk/pages/country/{c_name}.html">\n')
+        f.write(f'\t<link rel="canonical" href="https://sio2.pe.kr/pages/country/{c_name}.html">\n')
         
         index2 = search(htmls, '<div class="btn-group" role="group" aria-label="Basic radio toggle button group">')
         html_copy(f,htmls,index1+2,index2)
