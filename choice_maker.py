@@ -55,7 +55,7 @@ for choice in choice_name:
         f.write('\t<footer>\n')
 
         index3 = search(
-            htmls, '<p class = "footer text">Taken by Seok_young Hong</p>')
+            htmls, '<p class="footer text">Taken by Seok_young Hong</p>')
         html_copy(f, htmls, index3, -1)
         f.write('</html>')
 
